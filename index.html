@@ -63,7 +63,6 @@
             animation: textPopUp 4s ease;
             margin-top: 10px;
             color: #C9AE5D;
-            z-index: 10;
         }
 
         @keyframes textPopUp 
@@ -445,7 +444,7 @@ May this special day be as wonderful as you are, filled with love, laughter, and
                    {
                        let point = this.history[i]
                        ctx.beginPath()
-                       ctx.fillStyle = 'hsl(' + this.shade + ',100%,' + i + '%)'
+                       ctx.fillStyle = 'hsl(' + this.shade + ',50%,' + i + '%)'
                        ctx.arc(point.x, point.y, 1, 0, PI2, false)
                        ctx.fill()
                    } 
@@ -453,7 +452,7 @@ May this special day be as wonderful as you are, filled with love, laughter, and
                else 
                {
                    ctx.beginPath()
-                   ctx.fillStyle = 'hsl(' + this.shade + ',100%,50%)'
+                   ctx.fillStyle = 'hsl(' + this.shade + ',30%,60%)'
                    ctx.arc(this.x, this.y, 1, 0, PI2, false)
                    ctx.fill()
                }
